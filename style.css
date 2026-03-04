@@ -2,9 +2,63 @@ body {
     margin: 0;
     background-color: white;
 }
-.section {
-    width: 70%;
+.primera_section {
+    display: flex;
+    flex-direction: row;
     border-radius: 15px;
-    margin: 10px;
+    margin: 20px;
+    padding: 16px;
     background-color: rgb(191, 210, 226);
+}
+.tela_geral {
+    display: flex;
+    flex-direction: row;
+}
+.area_principal {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.area_secundaria {
+    width: 30%;
+}
+.mensagem_inicial {
+    display: flex;
+    flex-direction: row;
+}
+.texto_inicial {
+    display: flex;
+    flex-direction: column;
+    font-size: 17pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(28, 48, 138);
+}
+.foto_robo {
+    height: 400px;
+}
+.botao_mensagem_inicial {
+    height: 30px;
+    width: 180px;
+    border-radius: 50px;
+    background-color: rgb(28, 48, 138);
+    color: white;
+    text-align: start;
+    border: none;
+}
+.acoes_inicial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px;
+    
+}
+.botao_acao_inicial {
+    height: 30px;
+    width: 300px;
+    border-radius: 50px;
+    margin: 8px;
+    background-color: rgb(28, 48, 138);
+    color: white;
+    text-align: center;
+    border: none;
 }
