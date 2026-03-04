@@ -69,7 +69,7 @@ body {
     text-align: center;
     border: none;
 }
-.texto_compras {
+.texto_anuncio {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,4 +120,65 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.linha_do_tempo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 50px;
+}
+.linha_do_tempo::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #d3d3d3;
+    z-index: 1;
+}
+.linha_do_tempo::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 50%; 
+    height: 4px;
+    background-color: #2e7d32;
+    z-index: 2;
+}
+.passo {
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    flex: 1;
+}
+.circulo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #1976d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #1976d2;
+}
+.passo.completo .circulo {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+    color: white;
+}
+.passo.current .circulo {
+    background-color: #f9a825;
+    border-color: #f9a825;
+    color: white;
+}
+.passo span {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
 }
